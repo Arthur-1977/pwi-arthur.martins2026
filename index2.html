@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Principais Estádios da Copa 2026</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #0033a0;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Layout principal */
+section {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+/* Menu lateral */
+nav {
+  width: 15%;
+  background: #cbd5e0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+/* Conteúdo principal */
+article {
+  flex: 1;
+  padding: 20px;
+  background-color: #f1f1f1;
+  overflow-y: auto;
+}
+
+/* Esconde tudo */
+.stadium {
+  display: none;
+}
+
+/* Mostra o selecionado */
+#metlife:target,
+#att:target,
+#sofi:target,
+#azteca:target {
+  display: block;
+}
+
+/* Mostrar MetLife por padrão */
+body:not(:has(:target)) #metlife {
+  display: block;
+}
+
+/* Espaço extra entre título e parágrafo */
+.stadium h1 {
+  margin-bottom: 20px;
+}
+
+/* Estilo das imagens */
+.stadium img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #0033a0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+  nav, article {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Estádios da Copa do Mundo 2026</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#metlife">MetLife Stadium</a></li>
+      <li><a href="#att">AT&amp;T Stadium</a></li>
+      <li><a href="#sofi">SoFi Stadium</a></li>
+      <li><a href="#azteca">Estadio Azteca</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <div id="metlife" class="stadium">
+      <h1>MetLife Stadium</h1>
+      <img src="https://images.unsplash.com/photo-1583531893926-91c1523a3e9f?auto=format&fit=crop&w=800&q=80" alt="MetLife Stadium">
+      <p>O MetLife Stadium é um estádio multiuso localizado no Meadowlands Sports Complex, em East Rutherford, New Jersey, EUA. Foi inaugurado em 2010, substituindo o Giants Stadium, e serve como casa do New York Giants e do New York Jets, da NFL. Também está programado para sediar a final da Copa do Mundo FIFA de 2026. Com um custo aproximado de US$ 1,6 bilhão, foi o estádio mais caro já construído nos EUA na época de sua conclusão. Sediou o Super Bowl XLVIII e partidas do Mundial de Clubes da FIFA de 2025, incluindo a final. É o maior estádio de New Jersey, com capacidade para mais de 82.000 pessoas.</p>
+    </div>
+
+    <div id="att" class="stadium">
+      <h1>AT&amp;T Stadium</h1>
+      <img src="https://images.unsplash.com/photo-1601322709831-5e7bb7c39d7f?auto=format&fit=crop&w=800&q=80" alt="AT&T Stadium">
+      <p>O AT&T Stadium é um estádio com teto retrátil localizado em Arlington, Texas, EUA. Serve como casa do Dallas Cowboys da NFL e foi concluído em 2009. Também é sede do Cotton Bowl Classic, Big 12 Championship Game e Southwest Classic. É um dos 11 locais nos EUA que receberão partidas da Copa do Mundo FIFA de 2026. Substituiu o Texas Stadium, que foi casa dos Cowboys de 1971 a 2008, e recebe shows, basquete, futebol, rodeios, motocross, Spartan Races e wrestling profissional.</p>
+    </div>
+
+    <div id="sofi" class="stadium">
+      <h1>SoFi Stadium</h1>
+      <img src="https://images.unsplash.com/photo-1611032924348-9c6f5ff7d95e?auto=format&fit=crop&w=800&q=80" alt="SoFi Stadium">
+      <p>Inaugurado em setembro de 2020, o SoFi Stadium tem capacidade para 70.240 pessoas, podendo chegar a mais de 100.000 em grandes eventos, com teto translúcido de painéis ETFE. É casa do Los Angeles Rams e Los Angeles Chargers da NFL. Sediou o Super Bowl LVI em 2022, WrestleMania 39 em 2023, a final da Copa Ouro da CONCACAF em 2023 e o LA Bowl de 2021 a 2025. Receberá oito partidas da Copa do Mundo FIFA de 2026, o Super Bowl LXI em 2027 e a cerimônia de abertura das Olimpíadas de 2028.</p>
+    </div>
+
+    <div id="azteca" class="stadium">
+      <h1>Estadio Azteca</h1>
+      <p>O Estadio Azteca, na Cidade do México, é um dos únicos estádios a sediar duas finais de Copa do Mundo (1970 e 1986), além de outros dezenove jogos, tornando-o o estádio que mais recebeu partidas na história das Copas. É famoso por ter visto Pelé campeão em 1970 e Maradona em 1986.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Estadio_Azteca_desde_el_aire_4.tif/lossy-page1-1280px-Estadio_Azteca_desde_el_aire_4.tif.jpg" alt="Estadio Azteca">
+    </div>
+  </article>
+</section>
+
+<footer>
+  <p>Arthur Romera Martins</p>
+</footer>
+
+</body>
+</html>
