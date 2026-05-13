@@ -1,11 +1,20 @@
 /* Configurações Gerais */
 body { 
+<<<<<<< HEAD
     font-family: sans-serif; 
     margin: 0; 
     padding: 0; 
     background-color: #121212;
     color: #e0e0e0;
 }
+=======
+            font-family: sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+>>>>>>> 47822218a58be31fde26086e9a9b7da9ec101668
 
 /* Navegação Fixa */
 nav { 
@@ -31,6 +40,7 @@ nav a:hover {
     color: #82c0ff; 
 }
 
+<<<<<<< HEAD
 /* Layout e Containers */
 .conteudo-principal {
     margin-top: 80px; 
@@ -39,12 +49,24 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+=======
+        section { 
+            background: #1e1e1e;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            scroll-margin-top: 100px; 
+            border: 1px solid #333;
+        }
+>>>>>>> 47822218a58be31fde26086e9a9b7da9ec101668
 
 header {
     text-align: center; 
     margin-bottom: 40px;
 }
 
+<<<<<<< HEAD
 section { 
     background: #1e1e1e;
     padding: 25px;
@@ -54,6 +76,15 @@ section {
     scroll-margin-top: 100px; 
     border: 1px solid #333;
 }
+=======
+        .atividade {
+            background: #252a30;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #4da3ff;
+        }
+>>>>>>> 47822218a58be31fde26086e9a9b7da9ec101668
 
 h1, h2, h3 { 
     color: #ffffff; 
@@ -75,6 +106,7 @@ h1, h2, h3 {
     color: #fff; 
 }
 
+<<<<<<< HEAD
 label { 
     display: block; 
     margin-bottom: 5px; 
@@ -146,3 +178,6 @@ footer {
 footer p { 
     color: #666; 
 }
+=======
+        footer p { color: #666; }
+>>>>>>> 47822218a58be31fde26086e9a9b7da9ec101668
