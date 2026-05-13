@@ -1,57 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>Principais Estádios da Copa 2026</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/style.css"
+    <meta charset="UTF-8">
+    <title>Cursos 2026</title>
+    <style>
+      /* Estilos do Formulário */
+        .form-cadastro {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
+        .campo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .campo label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #2d3436;
+        }
+
+        .campo input {
+            padding: 12px;
+            border: 2px solid #f0f2f5;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        .campo input:focus {
+            border-color: #6c5ce7;
+            background-color: #fff;
+        }
+
+        /* Ajuste no Nav para incluir o link de cadastro */
+        /* Dica: Adicione <a href="#cadastro">Cadastro</a> no seu <nav> */
+        body { 
+            font-family: sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        nav { 
+            background: #000; 
+            color: white; 
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a { color: #4da3ff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #82c0ff; }
+
+        .conteudo-principal {
+            margin-top: 80px; 
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section { 
+            background: #1e1e1e; /* Fundo dos cards */
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            scroll-margin-top: 100px; 
+            border: 1px solid #333;
+        }
+
+        h1, h2, h3 { color: #ffffff; }
+
+        .atividade {
+            background: #252a30; /* Azul acinzentado bem escuro */
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #4da3ff;
+        }
+
+        .pergunta { margin-bottom: 10px; font-weight: bold; display: block; color: #fff; }
+        
+        label { display: block; margin-bottom: 5px; cursor: pointer; color: #ccc; }
+        label:hover { color: #fff; }
+
+        button {
+            background: #4da3ff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        button:hover { background: #357abd; }
+
+        footer p { color: #666; }
+    </style>
+</head>
 <body>
 
-<header>
-  <h2>Estádios da Copa do Mundo 2026</h2>
-</header>
+  <section id="cadastro">
+            <h2>Faça sua Matrícula</h2>
+            <p>Crie sua conta para acessar os materiais exclusivos de 2026.</p>
+            
+            <form class="form-cadastro">
+                <div class="campo">
+                    <label for="usuario">Nome de Usuário</label>
+                    <input type="text" id="usuario" placeholder="Ex: arthur_dev" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="No mínimo 6 caracteres" required>
+                </div>
+
+                <button type="submit">Finalizar Cadastro</button>
+            </form>
+        </section>
 
 <nav>
-  <ul>
-    <li><a href="#metlife">MetLife Stadium</a></li>
-    <li><a href="#att">AT&amp;T Stadium</a></li>
-    <li><a href="#sofi">SoFi Stadium</a></li>
-    <li><a href="#azteca">Estadio Azteca</a></li>
-  </ul>
+    <a href="#python">Python</a>
+    <a href="#javascript">JavaScript</a>
+    <a href="#webdev">Full Stack</a>
+    <a href="#datascience">Data Science</a>
 </nav>
 
-<section>
-  <article>
-    <div id="metlife" class="stadium">
-      <h1>MetLife Stadium</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Metlife_stadium_%28Aerial_view%29.jpg/1920px-Metlife_stadium_%28Aerial_view%29.jpg" alt="MetLife Stadium">
-      <p>O MetLife Stadium é um estádio multiuso localizado no Meadowlands Sports Complex, em East Rutherford, New Jersey, EUA. Foi inaugurado em 2010, substituindo o Giants Stadium, e serve como casa do New York Giants e do New York Jets, da NFL. Também está programado para sediar a final da Copa do Mundo FIFA de 2026. Com um custo aproximado de US$ 1,6 bilhão, foi o estádio mais caro já construído nos EUA na época de sua conclusão. Sediou o Super Bowl XLVIII e partidas do Mundial de Clubes da FIFA de 2025, incluindo a final. É o maior estádio de New Jersey, com capacidade para mais de 82.000 pessoas.</p>
-    </div>
+<div class="conteudo-principal">
+    
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1>Cursos de Programação 2026</h1>
+    </header>
 
-    <div id="att" class="stadium">
-      <h1>AT&amp;T Stadium</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Arlington_June_2020_4_%28AT%26T_Stadium%29.jpg/1920px-Arlington_June_2020_4_%28AT%26T_Stadium%29.jpg" alt="AT&T Stadium">
-      <p>O AT&T Stadium é um estádio com teto retrátil localizado em Arlington, Texas, EUA. Serve como casa do Dallas Cowboys da NFL e foi concluído em 2009. Também é sede do Cotton Bowl Classic, Big 12 Championship Game e Southwest Classic. É um dos 11 locais nos EUA que receberão partidas da Copa do Mundo FIFA de 2026. Substituiu o Texas Stadium, que foi casa dos Cowboys de 1971 a 2008, e recebe shows, basquete, futebol, rodeios, motocross, Spartan Races e wrestling profissional.</p>
-    </div>
+    <main>
+        <section id="python">
+            <h2>Python para Iniciantes</h2>
+            <p>Ideal para quem nunca programou. Focado em lógica e automação.</p>
+            
+            <div class="atividade">
+                <h3>Atividade de Nível</h3>
+                <p class="pergunta">Qual é a saída correta do código: print(2 + 3)?</p>
+                <label><input type="radio" name="q-python"> a) "23"</label>
+                <label><input type="radio" name="q-python"> b) 5</label>
+                <label><input type="radio" name="q-python"> c) Erro de sintaxe</label>
+                <button onclick="alert('Correto! Em Python, 2 + 3 realiza uma soma matemática resultando em 5.')">Verificar Resposta</button>
+            </div>
+        </section>
 
-    <div id="sofi" class="stadium">
-      <h1>SoFi Stadium</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/SoFi_Stadium_2023.jpg/1920px-SoFi_Stadium_2023.jpg" alt="SoFi Stadium">
-      <p>Inaugurado em setembro de 2020, o SoFi Stadium tem capacidade para 70.240 pessoas, podendo chegar a mais de 100.000 em grandes eventos, com teto translúcido de painéis ETFE. É casa do Los Angeles Rams e Los Angeles Chargers da NFL. Sediou o Super Bowl LVI em 2022, WrestleMania 39 em 2023, a final da Copa Ouro da CONCACAF em 2023 e o LA Bowl de 2021 a 2025. Receberá oito partidas da Copa do Mundo FIFA de 2026, o Super Bowl LXI em 2027 e a cerimônia de abertura das Olimpíadas de 2028.</p>
-    </div>
+        <section id="javascript">
+            <h2>JavaScript Avançado</h2>
+            
+            <div class="atividade">
+                <h3>Atividade de Nível</h3>
+                <p class="pergunta">Como declaramos uma variável que não pode ser alterada?</p>
+                <label><input type="radio" name="q-js"> a) let minhaVar</label>
+                <label><input type="radio" name="q-js"> b) var minhaVar</label>
+                <label><input type="radio" name="q-js"> c) const minhaVar</label>
+                <button onclick="alert('Boa! A palavra-chave const é usada para criar constantes.')">Verificar Resposta</button>
+            </div>
+        </section>
 
-    <div id="azteca" class="stadium">
-      <h1>Estadio Azteca</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Estadio_Azteca_desde_el_aire_4.tif/lossy-page1-1280px-Estadio_Azteca_desde_el_aire_4.tif.jpg" alt="Estadio Azteca">
-      <p>O Estadio Azteca, na Cidade do México, é um dos únicos estádios a sediar duas finais de Copa do Mundo (1970 e 1986), além de outros dezenove jogos, tornando-o o estádio que mais recebeu partidas na história das Copas. É famoso por ter visto Pelé campeão em 1970 e Maradona em 1986.</p>
-    </div>
-  </article>
-</section>
+        <section id="webdev">
+            <h2>Web Full Stack</h2>
+            
+            <div class="atividade">
+                <h3>Atividade de Nível</h3>
+                <p class="pergunta">Qual tag HTML é usada para criar um link?</p>
+                <label><input type="radio" name="q-web"> a) &lt;link&gt;</label>
+                <label><input type="radio" name="q-web"> b) &lt;a&gt;</label>
+                <label><input type="radio" name="q-web"> c) &lt;href&gt;</label>
+                <button onclick="alert('Isso mesmo! A tag <a> (anchor) é usada para links.')">Verificar Resposta</button>
+            </div>
+        </section>
 
-<footer>
-  <p>Arthur Romera Martins</p>
-</footer>
+        <section id="datascience">
+            <h2>Introdução à Ciência de Dados</h2>
+            
+            <div class="atividade">
+                <h3>Atividade de Nível</h3>
+                <p class="pergunta">Qual biblioteca Python é a mais usada para manipular tabelas de dados?</p>
+                <label><input type="radio" name="q-ds"> a) Pandas</label>
+                <label><input type="radio" name="q-ds"> b) Turtle</label>
+                <label><input type="radio" name="q-ds"> c) Spotify-Lib</label>
+                <button onclick="alert('Correto! O Pandas é a ferramenta essencial para análise de dados.')">Verificar Resposta</button>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; color: #888; padding: 20px;">
+        <p>&copy; 2026 Arthur Martins</p>
+    </footer>
+</div>
 
 </body>
 </html>
